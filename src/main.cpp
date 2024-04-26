@@ -84,16 +84,6 @@ int main()
                 buttonStates[event.cbutton.button] = false;
                 break;
 
-            //case SDL_JOYBUTTONDOWN:
-             //   if (event.jbutton.button == 8)
-               //     buttonStates[SDL_CONTROLLER_BUTTON_GUIDE] = true;
-                //break;
-
-            //case SDL_JOYBUTTONUP:
-              //  if (event.jbutton.button == 8)
-                //    buttonStates[SDL_CONTROLLER_BUTTON_GUIDE] = false;
-                //break;
-
             case SDL_CONTROLLERAXISMOTION:
                 std::cout << "Controller axis movement\n";
                 std::cout << "\tAxis: " << +event.caxis.axis << '\n';
