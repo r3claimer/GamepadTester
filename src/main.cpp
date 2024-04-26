@@ -196,22 +196,22 @@ int main()
 
             // D-pad btn up
             aatrigonRGBA(rend, 300, WIN_H-360, 280, WIN_H-320, 320, WIN_H-320, 255, 255, 255, 255);
-            if (dpadState & SDL_CONTROLLER_BUTTON_DPAD_UP)
+            if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_UP])
                 filledTrigonRGBA(rend, 300, WIN_H-360, 280, WIN_H-320, 320, WIN_H-320, 255, 255, 255, 255);
 
             // D-pad btn down
             aatrigonRGBA(rend, 300, WIN_H-240, 280, WIN_H-280, 320, WIN_H-280, 255, 255, 255, 255);
-            if (dpadState & SDL_CONTROLLER_BUTTON_DPAD_DOWN)
+            if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_DOWN])
                 filledTrigonRGBA(rend, 300, WIN_H-240, 280, WIN_H-280, 320, WIN_H-280, 255, 255, 255, 255);
 
             // D-pad btn left
             aatrigonRGBA(rend, 240, WIN_H-300, 280, WIN_H-320, 280, WIN_H-280, 255, 255, 255, 255);
-            if (dpadState & SDL_CONTROLLER_BUTTON_DPAD_LEFT)
+            if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_LEFT])
                 filledTrigonRGBA(rend, 240, WIN_H-300, 280, WIN_H-320, 280, WIN_H-280, 255, 255, 255, 255);
 
             // D-pad btn right
             aatrigonRGBA(rend, 360, WIN_H-300, 320, WIN_H-320, 320, WIN_H-280, 255, 255, 255, 255);
-            if (dpadState & SDL_CONTROLLER_BUTTON_DPAD_RIGHT)
+            if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_RIGHT])
                 filledTrigonRGBA(rend, 360, WIN_H-300, 320, WIN_H-320, 320, WIN_H-280, 255, 255, 255, 255);
             
             // Left bumper
