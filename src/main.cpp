@@ -74,7 +74,6 @@ int main()
 
             case SDL_CONTROLLERBUTTONDOWN:
                 std::cout << "Controller button down: " << +event.cbutton.button  << '\n';
-                SDL_GameControllerRumble(gcont, 0, 0xffff/2, 200);
                 buttonStates[event.cbutton.button] = true;
                 break;
 
