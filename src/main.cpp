@@ -164,14 +164,14 @@ int main()
             if (buttonStates[SDL_CONTROLLER_BUTTON_X])
                 filledCircleRGBA(rend, WIN_W-300-40, 300+40-40, 20, 100, 100, 255, 255);
 
-            // B button
+            // A button
             aacircleRGBA(rend, WIN_W-300+40, 300+40-40, 20, 255, 0, 0, 255);
-            if (buttonStates[SDL_CONTROLLER_BUTTON_B])
+            if (buttonStates[SDL_CONTROLLER_BUTTON_A])
                 filledCircleRGBA(rend, WIN_W-300+40, 300+40-40, 20, 255, 0, 0, 255);
 
-            // A button
+            // B button
             aacircleRGBA(rend, WIN_W-300, 300+80-40, 20, 0, 255, 0, 255);
-            if (buttonStates[SDL_CONTROLLER_BUTTON_A])
+            if (buttonStates[SDL_CONTROLLER_BUTTON_B])
                 filledCircleRGBA(rend, WIN_W-300, 300+80-40, 20, 0, 255, 0, 255);
 
             // D-pad up
@@ -192,7 +192,7 @@ int main()
 
             // D-pad hat left
             aatrigonRGBA(rend, 240, WIN_H-300, 280, WIN_H-320, 280, WIN_H-280, 255, 255, 255, 255);
-            if (dpadState & SDL_HAT_LEFT)
+            if (dpadState & SDL_HAT_LEFT) {
                 filledTrigonRGBA(rend, 240, WIN_H-300, 280, WIN_H-320, 280, WIN_H-280, 255, 255, 255, 255);
 			} else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_LEFT]) {
                 filledTrigonRGBA(rend, 240, WIN_H-300, 280, WIN_H-320, 280, WIN_H-280, 255, 255, 255, 255);
@@ -200,7 +200,7 @@ int main()
 
             // D-pad hat right
             aatrigonRGBA(rend, 360, WIN_H-300, 320, WIN_H-320, 320, WIN_H-280, 255, 255, 255, 255);
-            if (dpadState & SDL_HAT_RIGHT)
+            if (dpadState & SDL_HAT_RIGHT) {
                 filledTrigonRGBA(rend, 360, WIN_H-300, 320, WIN_H-320, 320, WIN_H-280, 255, 255, 255, 255);
 			} else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_RIGHT]) {
                 filledTrigonRGBA(rend, 360, WIN_H-300, 320, WIN_H-320, 320, WIN_H-280, 255, 255, 255, 255);
