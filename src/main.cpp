@@ -38,7 +38,6 @@ int main()
     SDL_Renderer* rend = SDL_CreateRenderer(window, 0, 0);
     gfxPrimitivesSetFont(gfxPrimitivesFontdata, 8, 8);
 
-    //SDL_GameControllerAddMappingsFromFile("../gamecontrollerdb.txt");
     SDL_GameControllerAddMappingsFromFile("/storage/.config/SDL-GameControllerDB/gamecontrollerdb.txt");
 
     SDL_GameController* gcont = nullptr;
