@@ -168,33 +168,33 @@ int main()
             aatrigonRGBA(rend, 300, WIN_H-360, 280, WIN_H-320, 320, WIN_H-320, 255, 255, 255, 255);
             if (dpadState & SDL_HAT_UP) {
                 filledTrigonRGBA(rend, 300, WIN_H-360, 280, WIN_H-320, 320, WIN_H-320, 255, 255, 255, 255);
-			} else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_UP]) {
+	    } else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_UP]) {
                 filledTrigonRGBA(rend, 300, WIN_H-360, 280, WIN_H-320, 320, WIN_H-320, 255, 255, 255, 255);
-			}
+	    }
 
             // D-pad down
             aatrigonRGBA(rend, 300, WIN_H-240, 280, WIN_H-280, 320, WIN_H-280, 255, 255, 255, 255);
             if (dpadState & SDL_HAT_DOWN) {
                 filledTrigonRGBA(rend, 300, WIN_H-240, 280, WIN_H-280, 320, WIN_H-280, 255, 255, 255, 255);
-			} else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_DOWN]) {
+	    } else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_DOWN]) {
                 filledTrigonRGBA(rend, 300, WIN_H-240, 280, WIN_H-280, 320, WIN_H-280, 255, 255, 255, 255);
-			}
+	    }
 
             // D-pad hat left
             aatrigonRGBA(rend, 240, WIN_H-300, 280, WIN_H-320, 280, WIN_H-280, 255, 255, 255, 255);
             if (dpadState & SDL_HAT_LEFT) {
                 filledTrigonRGBA(rend, 240, WIN_H-300, 280, WIN_H-320, 280, WIN_H-280, 255, 255, 255, 255);
-			} else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_LEFT]) {
+	    } else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_LEFT]) {
                 filledTrigonRGBA(rend, 240, WIN_H-300, 280, WIN_H-320, 280, WIN_H-280, 255, 255, 255, 255);
-			}
+	    }
 
             // D-pad hat right
             aatrigonRGBA(rend, 360, WIN_H-300, 320, WIN_H-320, 320, WIN_H-280, 255, 255, 255, 255);
             if (dpadState & SDL_HAT_RIGHT) {
                 filledTrigonRGBA(rend, 360, WIN_H-300, 320, WIN_H-320, 320, WIN_H-280, 255, 255, 255, 255);
-			} else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_RIGHT]) {
+	    } else if (buttonStates[SDL_CONTROLLER_BUTTON_DPAD_RIGHT]) {
                 filledTrigonRGBA(rend, 360, WIN_H-300, 320, WIN_H-320, 320, WIN_H-280, 255, 255, 255, 255);
-			}
+	    }
 
             // Left bumper
             rectangleColor(rend, 300-50, 300-150-20, 300+50, 300-150+20, 0xffffffff);
