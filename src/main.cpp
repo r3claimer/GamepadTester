@@ -84,15 +84,15 @@ int main()
                 buttonStates[event.cbutton.button] = false;
                 break;
 
-            case SDL_JOYBUTTONDOWN:
-                if (event.jbutton.button == 8)
-                    buttonStates[SDL_CONTROLLER_BUTTON_GUIDE] = true;
-                break;
+            //case SDL_JOYBUTTONDOWN:
+             //   if (event.jbutton.button == 8)
+               //     buttonStates[SDL_CONTROLLER_BUTTON_GUIDE] = true;
+                //break;
 
-            case SDL_JOYBUTTONUP:
-                if (event.jbutton.button == 8)
-                    buttonStates[SDL_CONTROLLER_BUTTON_GUIDE] = false;
-                break;
+            //case SDL_JOYBUTTONUP:
+              //  if (event.jbutton.button == 8)
+                //    buttonStates[SDL_CONTROLLER_BUTTON_GUIDE] = false;
+                //break;
 
             case SDL_CONTROLLERAXISMOTION:
                 std::cout << "Controller axis movement\n";
@@ -154,14 +154,14 @@ int main()
             filledCircleColor(rend, WIN_W-300+rightStickState.x*30, WIN_H-300+rightStickState.y*30, 30,
                     (buttonStates[SDL_CONTROLLER_BUTTON_RIGHTSTICK] ? 0xffffffff : 0));
 
-            // Y button
+            // X button
             aacircleRGBA(rend, WIN_W-300, 300-40, 20, 255, 255, 0, 255);
-            if (buttonStates[SDL_CONTROLLER_BUTTON_Y])
+            if (buttonStates[SDL_CONTROLLER_BUTTON_X])
                 filledCircleRGBA(rend, WIN_W-300, 300-40, 20, 255, 255, 0, 255);
 
-            // X button
+            // Y button
             aacircleRGBA(rend, WIN_W-300-40, 300+40-40, 20, 100, 100, 255, 255);
-            if (buttonStates[SDL_CONTROLLER_BUTTON_X])
+            if (buttonStates[SDL_CONTROLLER_BUTTON_Y])
                 filledCircleRGBA(rend, WIN_W-300-40, 300+40-40, 20, 100, 100, 255, 255);
 
             // A button
