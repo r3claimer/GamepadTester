@@ -5,8 +5,8 @@
 #include <SDL2/SDL2_gfxPrimitives_font.h>
 
 #define STICK_MAX_VAL (float(0x7fff))
-#define WIN_W 680
-#define WIN_H 480
+#define WIN_W 1100
+#define WIN_H 800
 
 std::string cStringToStdString(const char* str, const std::string& or_="N/A")
 {
